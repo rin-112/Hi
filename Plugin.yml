@@ -1,0 +1,30 @@
+name: DonutRTPQueue
+version: 1.0.0
+main: com.donut.rtpqueue.DonutRTPQueue
+api-version: 1.20
+description: RTP Queue System for DonutSMP
+author: DonutSMP Team
+
+commands:
+  rtpqueue:
+    description: Join the RTP queue
+    usage: /rtpqueue
+    aliases: [rtpq]
+    permission: rtpqueue.use
+  rtpqueueleave:
+    description: Leave the RTP queue
+    usage: /rtpqueueleave
+    aliases: [rtpql, rtpleave]
+    permission: rtpqueue.use
+  rtpqueuereload:
+    description: Reload the plugin config
+    usage: /rtpqueuereload
+    permission: rtpqueue.admin
+
+permissions:
+  rtpqueue.use:
+    description: Allows using RTP queue
+    default: true
+  rtpqueue.admin:
+    description: Allows admin commands
+    default: op
